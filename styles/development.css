@@ -1,0 +1,10 @@
+iframe {
+    display: block;
+    margin: 0px auto;
+}
+
+.thin-paragraph {
+    max-width: 550px;
+    margin: 0px auto;
+    text-align: justify;
+}

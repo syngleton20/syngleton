@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>syngleton</title>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="styles/art.css">
+        <link rel="stylesheet" type="text/css" href="styles/common.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <img src="img/banner.jpg" class="banner-image" draggable="false" alt="syngleton">
+                <nav>
+                    <a href="./index.html" class="non-draggable-text" draggable="false">home</a>
+                    <a href="./games.html" class="non-draggable-text" draggable="false">games</a>
+                    <a href="./art.html" class="non-draggable-text current-page-link" draggable="false">art</a>
+                    <a href="./development.html" class="non-draggable-text" draggable="false">development</a>
+                    <a href="./contact.html" class="non-draggable-text" draggable="false">contact</a>
+                </nav>
+            </header>
+
+            <div class="content">
+                <div class="slideshow">
+                    <div class="slideshow-container">
+                        <img src="img/art/1.jpg" class="slide">
+                        <img src="img/art/2.jpg" class="slide">
+                        <img src="img/art/3.jpg" class="slide">
+                        <img src="img/art/4.jpg" class="slide">
+                        <img src="img/art/5.jpg" class="slide">
+                        <img src="img/art/6.jpg" class="slide">
+                        <img src="img/art/7.jpg" class="slide">
+                        <img src="img/art/8.jpg" class="slide">
+                    </div>
+                </div>
+                <div class="slideshow-navigation">
+                    <button class="arrow" id="prev-button" onclick="incrementSlideIndex(-1)"><img src="img/arrowLeft.png"></button>
+                    <img class="dot" src="img/dot.jpg">
+                    <img class="dot" src="img/dot.jpg">
+                    <img class="dot" src="img/dot.jpg">
+                    <img class="dot" src="img/dot.jpg">
+                    <img class="dot" src="img/dot.jpg">
+                    <img class="dot" src="img/dot.jpg">
+                    <img class="dot" src="img/dot.jpg">
+                    <img class="dot" src="img/dot.jpg">
+                    <button class="arrow" id="next-button" onclick="incrementSlideIndex(1)"><img src="img/arrowRight.png"></button>
+                </div>
+            </div>
+
+            <footer>
+                <div class="social-links">
+                    <div class="social-link">
+                        <a target="_blank" rel="noopener noreferrer" href="https://syngleton.itch.io">
+                            <div class="social-link-frame" draggable="false">
+                                <img src="img/itch.png" class="social-link-icon" draggable="false">
+                                <img src="img/itchHover.png" class="social-link-overlay" draggable="false">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="social-link">
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCDkXuJXZSgmChOHJqOmllpA">
+                            <div class="social-link-frame">
+                                <img src="img/youtube.png" class="social-link-icon" draggable="false">
+                                <img src="img/youtubeHover.png" class="social-link-overlay" draggable="false">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="social-link">
+                        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/syngleton">
+                            <div class="social-link-frame">
+                                <img src="img/twitter.png" class="social-link-icon" draggable="false">
+                                <img src="img/twitterHover.png" class="social-link-overlay" draggable="false">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="social-link">
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/user/syngleton">
+                            <div class="social-link-frame">
+                                <img src="img/reddit.png" class="social-link-icon" draggable="false">
+                                <img src="img/redditHover.png" class="social-link-overlay" draggable="false">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <p class="non-draggable-text">Copyright © 2021 syngleton</p>
+            </footer>
+        </div>
+    </body>
+    <script src="art.js"></script>
+</html>

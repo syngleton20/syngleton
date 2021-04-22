@@ -1,0 +1,26 @@
+.home-grid-container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(2, 25%);
+    grid-auto-rows: minmax(300px, 50%);
+    grid-gap: 20px;
+    -ms-grid-gap: 20px;
+}
+
+.home-grid-item img {
+    position: relative;
+    width: 100%;
+}
+
+.home-grid-item p, h1 { max-width: 400px; }
+#paragraph-lower-left, #paragraph-upper-right { text-align: left; }
+
+@media screen and (max-width: 1000px) {
+    .home-grid-container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-flow: row wrap;
+    }
+}

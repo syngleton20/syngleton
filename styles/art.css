@@ -1,0 +1,65 @@
+.dot {
+    padding: 0px 8px;
+
+    width: 16px;
+    height: 16px;
+
+    transition: ease .1s;
+    -webkit-transition: ease .1s;
+    -moz-transition: ease .1s;
+    -o-transition: ease .1s;
+}
+
+.slideshow-navigation {
+    margin-top: 12px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide {
+    display: none;
+    width: 640px;
+    overflow: hidden;
+}
+
+.arrow {
+    background-color: black;
+    text-decoration: none;
+
+    border: none;
+    outline: none;
+
+    width: 32px;
+    height: 32px;
+}
+
+.arrow img {
+    pointer-events: none;
+
+    display: block;
+    position: relative;
+
+    right: 50%;
+
+    width: 32px;
+    height: 32px;
+
+    filter: opacity(40%);
+    transition: ease .1s;
+    -webkit-transition: ease .1s;
+    -moz-transition: ease .1s;
+    -o-transition: ease .1s;
+}
+
+.arrow:hover img, .arrow:focus img { filter: opacity(70%); }
+.arrow:active img { filter: opacity(100%); }
+
+@media screen and (max-width: 800px) {
+    .slide {
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+    }
+}
