@@ -8,6 +8,8 @@
     -webkit-transition: ease .1s;
     -moz-transition: ease .1s;
     -o-transition: ease .1s;
+
+    cursor: pointer;
 }
 
 .slideshow-navigation {
@@ -33,6 +35,8 @@
 
     width: 32px;
     height: 32px;
+
+    cursor: pointer;
 }
 
 .arrow img {
